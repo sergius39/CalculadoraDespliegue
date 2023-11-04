@@ -1,0 +1,18 @@
+<form action="paginadevuelta-php" method=""POST>
+    <input type="text" id="idnombre" name="nombre">
+    <input type="text" id="ideapellidos" name="apellidos">
+    <input type="tel" id="idtelefono" name="telefono">
+    <input type="email" id="idemail" name="email">
+    <input type="submit" value="enviar">
+</form>
+<?php 
+
+if ($_SERVER("REQUEST_METHOD"))=="POST"{
+    $nombre=$_POST["nombre"];
+    $apellido=$_POST["apellido"];
+    $telefono=$_POST["telefono"];
+    $email=$_POST["email"];
+   }
+?>
+</body>
+</html>
